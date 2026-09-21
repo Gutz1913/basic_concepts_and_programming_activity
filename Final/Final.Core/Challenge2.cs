@@ -2,6 +2,14 @@ using Shared;
 
 namespace Final.Core;
 
+/* DESAFÍO 2 => NÚMERO MAYOR
+Construir un programa que pida por pantalla 3 números y luego diga cúal es el mayor de los números ingresados
+• Prueba => Al ejecutar el programa debe mostrar lo siguiente:
+Ingrese el primer número: 45
+Ingrese el segundo número: 23
+Ingrese el tercer número: 12
+El numero mayor es: 45 */
+
 public class Challenge2
 {
     public void Run()

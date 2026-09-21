@@ -2,6 +2,15 @@
 
 namespace Final.Core;
 
+/* DESAFÍO 1 => NUMERO ES PAR O IMPAR
+Construir un programa que pida un número y luego diga si este número es par o impar
+• Prueba 1 => Al ejecutar el programa debe mostrar lo siguiente:
+Ingrese un número: 10
+El número 10 es par
+• Prueba 2 => Al ejecutar el programa debe mostrar lo siguiente
+Ingrese un número: 7
+El número 7 es impar */
+
 public class Challenge1
 {
     public void Run()

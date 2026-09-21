@@ -2,6 +2,21 @@ using Shared;
 
 namespace Final.Core;
 
+/* DESAFÍO 10 => ECUACIONES CUADRÁTICAS
+Construir un programa que resuelva los valores de X para una ecuación cuadrática
+• Prueba 1 => Al ejecutar el programa debe mostrar lo siguiente:
+Ingrese valor de a: 1
+Ingrese valor de b: 3
+Ingrese valor de c: 2
+x1: -1,00000
+x2: -2,00000
+• Prueba 2 => Al ejecutar el programa debe mostrar lo siguiente:
+Ingrese valor de a: 2
+Ingrese valor de b: 8
+Ingrese valor de c: 3
+x1: -0,41886
+x2: -3,58114 */
+
 public class Challenge10
 {
     public void Run()

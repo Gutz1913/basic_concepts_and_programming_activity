@@ -2,6 +2,38 @@ using Shared;
 
 namespace Final.Core;
 
+/* DESAFÍO 6 => ENVÍO DE MERCANCÍA
+Una empresa de envío de mercancías, tiene un plan de tarifas y descuentos sobre el valor del envío de mercancía de sus clientes:
+• Tarifas:
+    • Si el peso de la mercancía es inferior a 100 kg, la tarifa para el envío de ésta es de 20.000 pesos.
+    •Si el peso de la mercancía está entre 100 y 150 kg, la tarifa para el envío de ésta es de 25.000 pesos.
+    •Si el peso de la mercancía es superior a 150 kg y menor o igual a 200 kg, la tarifa para el envío de ésta es de 30.000 pesos.
+    • Si el peso de la mercancía es superior a 200 kg, la tarifa es de 35.000 pesos y además por cada 10 kg adicionales se paga 2.000 pesos.
+• Descuentos:
+    • Si el valor de la mercancía está entre 300.000 y 600.000 pesos se hace un descuento del 10% sobre el valor del envío.
+    • Si el valor de la mercancía es superior a 600.000 pero menor o igual a 1.000.000 de pesos se hace un descuento del 20% sobre el valor del envío.
+    • Si el valor de la mercancía es superior a 1.000.000 se hace un descuento del 30% sobre el valor del envío.
+• Promociones (solo hay dos tipos de pago):
+    • Si es día de promoción (lunes) y paga con tarjeta propia del almacén, sólo paga el 50% del costo de envío.
+    • Si paga en efectivo y el valor de la mercancía es superior a 1.000.000, sólo paga el 60% del costo de envío.
+Si el cliente aplica a una promoción, no puede aplicar a un descuento. Se debe obtener el valor total del envío.
+• Prueba 1 => Al ejecutar el programa debe mostrar lo siguiente:
+Peso de la mercancía: 289
+Valor de la mercancía: 780000
+Es lunes [S]í [N]o: s
+Tipo de pago [E]fectivo [T]arjeta: t
+Tarifa: 51000
+Promoción: 25500
+Total a pagar: 25500
+• Prueba 2 => Al ejecutar el programa debe mostrar lo siguiente:
+Peso de la mercancía: 150
+Valor de la mercancía: 1200000
+Es lunes [S]í [N]o: n
+Tipo de pago [E]fectivo [T]arjeta: t
+Tarifa: 25000
+Descuento: 7500
+Total a pagar: 17500 */
+
 public class Challenge6
 {
     public void Run()

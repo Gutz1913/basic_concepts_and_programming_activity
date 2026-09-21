@@ -2,6 +2,12 @@ using Shared;
 
 namespace Final.Core;
 
+/* DESAFÍO 14 => CÁLCULO DEL NÚMERO PI
+Hacer un programa que calcule el número PI, dado el número de términos requeridos por el usuario.
+• Prueba => Al ejecutar el programa debe mostrar lo siguiente:
+Cuantos términos de precisión desea: 800
+El valor de 'pi' con  = 3.1403426540780757 */
+
 public class Challenge14
 {
     public void Run()

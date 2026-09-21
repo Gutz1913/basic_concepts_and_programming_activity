@@ -2,6 +2,15 @@ using Shared;
 
 namespace Final.Core;
 
+/* DESAFÍO 12 => ¿ES PRIMO?
+Construir un programa que pida un número por pantalla y luego diga si es primo o no.
+• Prueba 1: Al ejecutar el programa debe mostrar lo siguiente:
+Ingrese número: 997
+El número: 997, SI es primo
+• Prueba 2: Al ejecutar el programa debe mostrar lo siguiente:
+Ingrese número: 9
+El número: 9, NO es primo */
+
 public class Challenge12
 {
     public void Run()

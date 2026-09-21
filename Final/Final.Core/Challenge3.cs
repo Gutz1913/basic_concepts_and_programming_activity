@@ -2,6 +2,22 @@ using Shared;
 
 namespace Final.Core;
 
+/* DESAFÍO 3 => AÑO BISIESTO
+Construir un programa que pida un año y luego determine si el año es bisiesto o no. 
+Tenga en cuenta que los años bisiestos son los números múltiplos de 4, pero que no son múltiplos de 100 y si son múltiplos de 100 y múltiplos de 400 sí son bisiestos. 
+• Prueba 1 => Al ejecutar el programa debe mostrar lo siguiente:
+Ingrese el año que desea consultar: 1974
+El año 1974, NO fue bisiesto.
+• Prueba 2 => Al ejecutar el programa debe mostrar lo siguiente:
+Ingrese el año que desea consultar: 2000
+El año 2000, SI fue bisiesto.
+• Prueba 3 => Al ejecutar el programa debe mostrar lo siguiente:
+Ingrese el año que desea consultar: 2026
+El año 2012, NO es bisiesto.
+• Prueba 4 => Al ejecutar el programa debe mostrar lo siguiente:
+Ingrese el año que desea consultar: 2028
+El año 2028, SI va a ser bisiesto. */
+
 public class Challenge3
 {
     public void Run()
