@@ -36,13 +36,15 @@ public class Challenge7
                 Console.WriteLine();
                 Console.WriteLine("****** EJERCICIO DE SUMA Y PROMEDIO ******");
                 Console.WriteLine();
-                var n = ConsoleExtension.GetInt("Cuantos números desea: ");
+                var n = ConsoleExtension.GetInt("Cuantos números desea................: ");
+                Console.WriteLine();
                 int sum = 0;
                 for (int i = 1; i <= n; i++)
                 {
                     Console.Write($"{i}\t");
                     sum += i;
                 }
+                Console.WriteLine();
                 var average = sum / n;
                 Console.WriteLine();
                 Console.WriteLine($">>> La suma es.......................: {sum,10:N0} <<<");
@@ -59,5 +61,6 @@ public class Challenge7
                 answer = ConsoleExtension.GetValidOptions("¿Deseas continuar? ¿[S]í, [N]o?: ", options);
             } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
         } while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+        Console.WriteLine(":::::: GAME OVER ::::::");
     }
 }

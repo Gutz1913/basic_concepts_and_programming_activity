@@ -40,6 +40,7 @@ public class Challenge15
                 answer = ConsoleExtension.GetValidOptions("¿Deseas continuar? ¿[S]í, [N]o?: ", options);
             } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
         } while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+        Console.WriteLine(":::::: GAME OVER ::::::");
     }
 
     void ShowCalendar(int year)

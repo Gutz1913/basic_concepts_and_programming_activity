@@ -46,8 +46,8 @@ public class Challenge5
                 var registrationValue = CalculateRegistrationValue(credits, creditValue, stratum);
                 var subsidy = CalculateSubsidy(stratum);
                 Console.WriteLine();
-                Console.WriteLine($">>> Costo de la matrícula..........: {registrationValue,20:C2} <<<");
-                Console.WriteLine($">>> Valor del subsidio.............: {subsidy,20:C2} <<<");
+                Console.WriteLine($">>> Costo de la matrícula...........: {registrationValue,20:C2} <<<");
+                Console.WriteLine($">>> Valor del subsidio..............: {subsidy,20:C2} <<<");
                 Console.WriteLine();
             }
             catch (Exception ex)
@@ -60,6 +60,7 @@ public class Challenge5
                 answer = ConsoleExtension.GetValidOptions("¿Deseas continuar? ¿[S]í, [N]o?: ", options);
             } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
         } while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+        Console.WriteLine(":::::: GAME OVER ::::::");
     }
 
     decimal CalculateSubsidy(int stratum)

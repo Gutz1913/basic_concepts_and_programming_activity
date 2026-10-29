@@ -54,7 +54,7 @@ public class Challenge3
                     message = "fue";
                 }
                 var isLeapYear = DateUtilities.IsLeapYear(year);
-                Console.WriteLine($">>> El año {year}, {(isLeapYear ? "SI" : "NO" )} {message} bisiesto <<<");
+                Console.WriteLine($">>> El año {year}, {(isLeapYear ? "SI" : "NO")} {message} bisiesto <<<");
 
                 Console.WriteLine();
             }
@@ -68,5 +68,6 @@ public class Challenge3
                 answer = ConsoleExtension.GetValidOptions("¿Deseas continuar? ¿[S]í, [N]o?: ", options);
             } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
         } while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+        Console.WriteLine(":::::: GAME OVER ::::::");
     }
 }

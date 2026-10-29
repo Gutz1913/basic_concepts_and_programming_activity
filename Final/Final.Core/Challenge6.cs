@@ -52,19 +52,19 @@ public class Challenge6
                 Console.WriteLine();
                 Console.WriteLine("****** EJERCICIO DE ENVÍO DE MERCANCÍAS ******");
                 Console.WriteLine();
-                var weigth = ConsoleExtension.GetFloat("Ingrese el peso de la mercancía: ");
-                var value = ConsoleExtension.GetDecimal("Ingrese el valor de la mercancía: ");
+                var weigth = ConsoleExtension.GetFloat("Ingrese el peso de la mercancía.......: ");
+                var value = ConsoleExtension.GetDecimal("Ingrese el valor de la mercancía......: ");
                 string isMonday;
                 do
                 {
-                    isMonday = ConsoleExtension.GetValidOptions("Es lunes [S]í, [N]o?..............: ", options)!;
+                    isMonday = ConsoleExtension.GetValidOptions("Es lunes [S]í, [N]o?..................: ", options)!;
                 } while (!options.Any(x => x.Equals(isMonday, StringComparison.CurrentCultureIgnoreCase)));
 
                 var payMethods = new List<string> { "e", "t" };
                 string payMethod;
                 do
                 {
-                    payMethod = ConsoleExtension.GetValidOptions("Tipo de pago [E]fectivo, [T]arjeta: ", payMethods)!;
+                    payMethod = ConsoleExtension.GetValidOptions("Tipo de pago [E]fectivo, [T]arjeta....: ", payMethods)!;
                 } while (!payMethods.Any(x => x.Equals(payMethod, StringComparison.CurrentCultureIgnoreCase)));
 
                 var fare = CalculateFare(weigth);
@@ -91,6 +91,7 @@ public class Challenge6
                 answer = ConsoleExtension.GetValidOptions("¿Deseas continuar? ¿[S]í, [N]o?: ", options);
             } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
         } while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+        Console.WriteLine(":::::: GAME OVER ::::::");
     }
 
     decimal CalculatePromotion(decimal fare, string isMonday, string payMethod, decimal value)
