@@ -68,12 +68,15 @@ public class Challenge6
                 } while (!payMethods.Any(x => x.Equals(payMethod, StringComparison.CurrentCultureIgnoreCase)));
 
                 var fare = CalculateFare(weigth);
-                var discount = CalculateDiscount(fare, value);
-                decimal promotion = 0;
-                if (discount == 0)
+
+                decimal promotion = CalculatePromotion(fare, isMonday, payMethod, value);
+                decimal discount = 0;
+
+                if (promotion == 0)
                 {
-                    promotion = CalculatePromotion(fare, isMonday, payMethod, value);
+                    discount = CalculateDiscount(fare, value);
                 }
+
                 Console.WriteLine();
                 Console.WriteLine($">>> Tarifa............................: {fare,20:C2} <<<");
                 Console.WriteLine($">>> Descuento.........................: {discount,20:C2} <<<");
