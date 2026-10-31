@@ -104,7 +104,7 @@ Console.WriteLine("::::: GAME OVER :::::");
 // {
 //     var divis = (double)n1 / (double)n2;
 
-//     if (n2 <= 0)
+//     if (n2 == 0)
 //     {
 //         throw new Exception("No se puede dividir por cero.");
 //     }
