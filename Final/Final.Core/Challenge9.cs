@@ -9,8 +9,8 @@ Cuantos términos desea: 20
 Digita el valor de x: 1
 f(x) = 0,367879
 • Prueba 2 => Al ejecutar el programa debe mostrar lo siguiente:
-Cuantos términos desea: 500
-Digita el valor de x: 2
+Cuantos términos desea: 300
+Digita el valor de x: 8
 f(x) = 0,000335 */
 
 public class Challenge9
